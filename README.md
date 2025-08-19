@@ -1,69 +1,50 @@
-# React + TypeScript + Vite
+# React TypeScript UI Kit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and reusable **UI component library** built with **React, TypeScript, and TailwindCSS**.  
+Designed to help developers quickly add modern, responsive, and professional components to their projects.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔹 Features
 
-## Expanding the ESLint configuration
+### **InputField Component**
+- Customizable text input with **label, placeholder, helper text, and error messages**.
+- **States:** disabled, invalid, loading.
+- **Variants:** filled, outlined, ghost.
+- **Sizes:** small, medium, large.
+- Optional **clear button** and **password toggle**.
+- Supports **light & dark themes**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### **DataTable Component**
+- Display structured data in a clean table format.
+- Supports **column sorting** and **single/multiple row selection**.
+- Handles **loading** and **empty states** gracefully.
+- Fully typed with TypeScript for safety.
+- Styled with **TailwindCSS** for a modern look.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## ⚡ Technologies Used
+- **React 19 + TypeScript** – type-safe and scalable.
+- **TailwindCSS 3** – for modern and responsive styling.
+- **Lucide React** – lightweight, professional icons.
+- **Vite** – fast development and build tool.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💡 Why This Project?
+This project is perfect if you want:
+- A **ready-to-use UI kit** for your React projects.
+- **Flexible and professional components** for forms and tables.
+- A **learning resource** to understand how to build React + TypeScript component libraries.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Future Improvements
+- Add more components like **buttons, modals, and cards**.
+- Include **unit tests** and **Storybook documentation**.
+- Enhance **accessibility (a11y)**.
+- Package as an **npm library** for reuse across projects.
+
+---
+
