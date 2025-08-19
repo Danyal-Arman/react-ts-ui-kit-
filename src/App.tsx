@@ -11,11 +11,12 @@ function App() {
     { id: 3, name: "Charlie", role: "Manager" },
   ];
 
- const columns: Column<typeof users[0]>[] = [
+const columns: Column<typeof users[0]>[] = [
   { key: "id", title: "ID", dataIndex: "id", sortable: true },
   { key: "name", title: "Name", dataIndex: "name", sortable: true },
-  { key: "email", title: "Email", dataIndex: "email" },
+  { key: "role", title: "role", dataIndex: "role" }, // <- must match the key exactly
 ];
+
 
   return (
     <div className="p-6 space-y-8 bg-gray-50 min-h-screen dark:bg-gray-900 dark:text-white">
